@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+  </head>
+  <body>
+    <div class="login-container">
+      <form action="/login" method="post">
+        <h1>Login</h1>
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Username" required >
+          <i class='bx bxs-user'></i>
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" placeholder="password" required>
+          <i class='bx bxs-lock-open-alt'></i>
+         
+        </div>
+        <div class="remember-forgot">
+          <label> <input type="checkbox" />Remember me </label>
+          <a href="#">forgot password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="register-link">
+          <p>
+            Don't have an account?
+            <a href="/Register.html"> Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="/login" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="message" class="error"></p>
+    </div>
+</body>
+</html> -->
